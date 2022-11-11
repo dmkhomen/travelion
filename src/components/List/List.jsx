@@ -3,25 +3,11 @@ import { Grid, Typography, InputLabel, MenuItem, FormControl, Select } from '@ma
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from './styles.js';
 
-const List = () => {
+const List = ({places}) => {
   const classes = useStyles();
   const [type, setType] = useState('restaurants')
   const [rating, setRating] = useState('')
 
-  const places = [
-    {name: "Nice place"},
-    {name: "Cozy place"},
-    {name: "Comfortable place"},
-    {name: "Cool place"},
-    {name: "Nice place"},
-    {name: "Cozy place"},
-    {name: "Comfortable place"},
-    {name: "Cool place"},
-    {name: "Nice place"},
-    {name: "Cozy place"},
-    {name: "Comfortable place"},
-    {name: "Cool place"},
-  ];
   return (
     <div className={classes.container}>
       <Typography variant="h4">Restaurants, Hotels & Attractions around you</Typography>
