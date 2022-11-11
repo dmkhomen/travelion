@@ -9,10 +9,11 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.appbar}>
       <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
-          Travel Advisor
+          <img src="./logo.png" style={{height: 28}}/>
+          TraveLion
         </Typography>
         <Box display="flex">
           <Typography variant="h6" className={classes.title}>
